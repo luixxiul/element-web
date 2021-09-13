@@ -6,7 +6,7 @@
     "Unknown device": "Periferic desconegut",
     "powered by Matrix": "propulsat per Matrix",
     "Dismiss": "Refusar",
-    "Welcome to Element": "La benvenguda a SchildiChat",
+    "Welcome to Element": "La benvenguda a Element",
     "Decentralised, encrypted chat &amp; collaboration powered by [matrix]": "Messatjariá chifrada, descentralizada e collaborativa propulsada per [matrix]",
     "Sign In": "Se connectar",
     "Create Account": "Crear un compte",
@@ -15,7 +15,7 @@
     "Invalid configuration: no default server specified.": "Configuracion invalida : pas de servidor per defauta especificat.",
     "Invalid configuration: can only specify one of default_server_config, default_server_name, or default_hs_url.": "Configuracion invalida : podètz unicament especificar un camp entre default_server_config, default_server_name, o default_hs_url.",
     "Failed to start": "Non se pòt pas lançar",
-    "Go to element.io": "Anar a schildi.chat",
+    "Go to element.io": "Anar a element.io",
     "I understand the risks and wish to continue": "Compréni los risques e vòli contunhar",
     "You can continue using your current browser, but some or all features may not work and the look and feel of the application may be incorrect.": "Podètz contunhar a utilizar lo vòstre navigator actual, mas qualques o totes las foncionalitats o/e l'apparéncia poirián mal foncionar .",
     "Please install <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, or <safariLink>Safari</safariLink> for the best experience.": "Si vos plai installatz <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, o <safariLink>Safari</safariLink> per una melhora experiéncia.",
@@ -31,6 +31,6 @@
     "Open": "Dobrir",
     "Download Completed": "Descargament acabat",
     "Unable to load config file: please refresh the page to try again.": "Se pòt pas cargar lo fichièr de configuracion : si vos plai actualizatz la pagina per tornar ensajar.",
-    "Your Element configuration contains invalid JSON. Please correct the problem and reload the page.": "La configuracion d'SchildiChat conténe de JSON invalid. Si vos plai corregitz lo problème e actualizatz la pagina.",
-    "Your Element is misconfigured": "Lo vòstre SchildiChat es mal configurat"
+    "Your Element configuration contains invalid JSON. Please correct the problem and reload the page.": "La configuracion d'Element conténe de JSON invalid. Si vos plai corregitz lo problème e actualizatz la pagina.",
+    "Your Element is misconfigured": "Lo vòstre Element es mal configurat"
 }
