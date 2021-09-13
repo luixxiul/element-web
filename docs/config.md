@@ -56,92 +56,94 @@ For a good example, see https://develop.element.io/config.json.
 1. `roomDirectory`: config for the public room directory. This section is optional.
 1. `roomDirectory.servers`: List of other homeservers' directories to include in the drop
    down list. Optional.
-1. `default_theme`: name of theme to use by default (e.g. 'light')
-1. `update_base_url` (electron app only): HTTPS URL to a web server to download
+1. `default_theme`: name of theme to use by default (can be one of 'light', 'dark' or 'system'), defaults to 'system',
+   set the default light and dark theme via the `light_theme` and `dark_theme` in `settingDefaults` respectively and
+   provide [custom themes](https://github.com/SchildiChat/element-web/blob/sc/docs/theming.md#custom-themes) via `custom_themes`
+2. `update_base_url` (electron app only): HTTPS URL to a web server to download
    updates from. This should be the path to the directory containing `macos`
    and `win32` (for update packages, not installer packages).
-1. `piwik`: Analytics can be disabled by setting `piwik: false` or by leaving the piwik config
+3. `piwik`: Analytics can be disabled by setting `piwik: false` or by leaving the piwik config
    option out of your config file. If you want to enable analytics, set `piwik` to be an object
    containing the following properties:
     1. `url`: The URL of the Piwik instance to use for collecting analytics
-    1. `whitelistedHSUrls`: a list of HS URLs to not redact from the analytics
-    1. `whitelistedISUrls`: a list of IS URLs to not redact from the analytics
-    1. `siteId`: The Piwik Site ID to use when sending analytics to the Piwik server configured above
-1. `welcomeUserId`: the user ID of a bot to invite whenever users register that can give them a tour
-1. `embeddedPages`: Configures the pages displayed in portions of Element that
+    2. `whitelistedHSUrls`: a list of HS URLs to not redact from the analytics
+    3. `whitelistedISUrls`: a list of IS URLs to not redact from the analytics
+    4. `siteId`: The Piwik Site ID to use when sending analytics to the Piwik server configured above
+4. `welcomeUserId`: the user ID of a bot to invite whenever users register that can give them a tour
+5. `embeddedPages`: Configures the pages displayed in portions of Element that
    embed static files, such as:
     1. `welcomeUrl`: Initial content shown on the outside of the app when not
        logged in. Defaults to `welcome.html` supplied with Element.
-    1. `homeUrl`: Content shown on the inside of the app when a specific room is
+    2. `homeUrl`: Content shown on the inside of the app when a specific room is
        not selected. By default, no home page is configured. If one is set, a
        button to access it will be shown in the top left menu.
-    1. `loginForWelcome`: Overrides `welcomeUrl` to make the welcome page be the
+    3. `loginForWelcome`: Overrides `welcomeUrl` to make the welcome page be the
        same page as the login page when `true`. This effectively disables the
        welcome page.
-1. `defaultCountryCode`: The ISO 3166 alpha2 country code to use when showing
+6. `defaultCountryCode`: The ISO 3166 alpha2 country code to use when showing
    country selectors, like the phone number input on the registration page.
    Defaults to `GB` if the given code is unknown or not provided.
-1. `settingDefaults`:  Defaults for settings that support the `config` level,
+7. `settingDefaults`:  Defaults for settings that support the `config` level,
    as an object mapping setting name to value (note that the "theme" setting
    is special cased to the `default_theme` in the config file).
-1. `disable_custom_urls`: disallow the user to change the
+8. `disable_custom_urls`: disallow the user to change the
    default homeserver when signing up or logging in.
-1. `permalinkPrefix`: Used to change the URL that Element generates permalinks with.
+9.  `permalinkPrefix`: Used to change the URL that Element generates permalinks with.
    By default, this is "https://matrix.to" to generate matrix.to (spec) permalinks.
    Set this to your Element instance URL if you run an unfederated server (eg:
    "https://element.example.org").
-1. `jitsi`: Used to change the default conference options. Learn more about the
+11. `jitsi`: Used to change the default conference options. Learn more about the
    Jitsi options at [jitsi.md](./jitsi.md).
     1. `preferredDomain`: The domain name of the preferred Jitsi instance. Defaults
        to `jitsi.riot.im`. This is used whenever a user clicks on the voice/video
        call buttons - integration managers may use a different domain.
-1. `enable_presence_by_hs_url`: The property key should be the URL of the homeserver
+12. `enable_presence_by_hs_url`: The property key should be the URL of the homeserver
     and its value defines whether to enable/disable the presence status display
     from that homeserver. If no options are configured, presence is shown for all
     homeservers.
-1. `disable_guests`: Disables guest access tokens and auto-guest registrations.
+13. `disable_guests`: Disables guest access tokens and auto-guest registrations.
     Defaults to false (guests are allowed).
-1. `disable_login_language_selector`: Disables the login language selector. Defaults
+14. `disable_login_language_selector`: Disables the login language selector. Defaults
     to false (language selector is shown).
-1. `disable_3pid_login`: Disables 3rd party identity options on login and registration form
+15. `disable_3pid_login`: Disables 3rd party identity options on login and registration form
     Defaults to false (3rd party identity options are shown).
-1. `default_federate`: Default option for room federation when creating a room
+16. `default_federate`: Default option for room federation when creating a room
     Defaults to true (room federation enabled).
-1. `desktopBuilds`: Used to alter promotional links to the desktop app. By default
+17. `desktopBuilds`: Used to alter promotional links to the desktop app. By default
    the builds are considered available and accessible from https://element.io. This
    config option is typically used in the context of encouraging encrypted message
    search capabilities (Seshat). All the options listed below are required if this
    option is specified.
    1. `available`: When false, the desktop app will not be promoted to the user.
-   1. `logo`: An HTTP URL to the avatar for the desktop build. Should be 24x24, ideally
+   2. `logo`: An HTTP URL to the avatar for the desktop build. Should be 24x24, ideally
       an SVG.
-   1. `url`: An HTTP URL for where to send the user to download the desktop build.
-1. `mobileBuilds`: Used to alter promotional links to the mobile app. By default the
+   3. `url`: An HTTP URL for where to send the user to download the desktop build.
+18. `mobileBuilds`: Used to alter promotional links to the mobile app. By default the
    builds are considered available and accessible from https://element.io. This config
    option is typically used in a context of encouraging the user to try the mobile app
    instead of a mobile/incompatible browser.
    1. `ios`: The URL to the iOS build. If `null`, it will be assumed to be not available.
        If not set, the default element.io builds will be used.
-   1. `android`: The URL to the Android build. If `null`, it will be assumed to be not available.
+   2. `android`: The URL to the Android build. If `null`, it will be assumed to be not available.
        If not set, the default element.io builds will be used.
-   1. `fdroid`: The URL to the FDroid build. If `null`, it will be assumed to be not available.
+   3. `fdroid`: The URL to the FDroid build. If `null`, it will be assumed to be not available.
       If not set, the default element.io builds will be used.
-1. `mobileGuideToast`: Whether to show a toast a startup which nudges users on
+19. `mobileGuideToast`: Whether to show a toast a startup which nudges users on
    iOS and Android towards the native mobile apps. The toast redirects to the
    mobile guide if they accept. Defaults to false.
-1. `audioStreamUrl`: If supplied, show an option on Jitsi widgets to stream
+20. `audioStreamUrl`: If supplied, show an option on Jitsi widgets to stream
    audio using Jitsi's live streaming feature. This option is experimental and
    may be removed at any time without notice.
-1. `voip`: Behaviour related to calls
+21. `voip`: Behaviour related to calls
    1. `obeyAssertedIdentity`: If set, MSC3086 asserted identity messages sent
       on VoIP calls will cause the call to appear in the room corresponding to the
       asserted identity. This *must* only be set in trusted environments.
-1. `posthog`: [Posthog](https://posthog.com/) integration config. If not set, Posthog analytics are disabled.
-   1. `projectApiKey`: The Posthog project API key
-   2. `apiHost`: The Posthog API host
-1. `sentry`: [Sentry](https://sentry.io/) configuration for rageshake data being sent to sentry.
-   1. `dsn`: the Sentry [DSN](https://docs.sentry.io/product/sentry-basics/dsn-explainer/)
-   2. `environment`: (optional) The [Environment](https://docs.sentry.io/product/sentry-basics/environments/) to pass to sentry
+22. `posthog`: [Posthog](https://posthog.com/) integration config. If not set, Posthog analytics are disabled.
+   2. `projectApiKey`: The Posthog project API key
+   3. `apiHost`: The Posthog API host
+23. `sentry`: [Sentry](https://sentry.io/) configuration for rageshake data being sent to sentry.
+   4. `dsn`: the Sentry [DSN](https://docs.sentry.io/product/sentry-basics/dsn-explainer/)
+   5. `environment`: (optional) The [Environment](https://docs.sentry.io/product/sentry-basics/environments/) to pass to sentry
 
 Note that `index.html` also has an og:image meta tag that is set to an image
 hosted on riot.im. This is the image used if links to your copy of Element
