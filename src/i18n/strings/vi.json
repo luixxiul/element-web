@@ -3,7 +3,7 @@
     "You need to be using HTTPS to place a screen-sharing call.": "Bạn phải sử dụng HTTPS để dùng chức năng chia sẻ màn hình.",
     "Dismiss": "Bỏ qua",
     "powered by Matrix": "tài trợ bởi Matrix",
-    "Welcome to Element": "Chào mừng tới SchildiChat",
+    "Welcome to Element": "Chào mừng tới Element",
     "Decentralised, encrypted chat &amp; collaboration powered by [matrix]": "Chat phân tán, mã hóa &amp; giao tiếp được tài trợ bởi [matrix]",
     "Unexpected error preparing the app. See console for details.": "Lỗi xảy ra trong lúc chuẩn bị app. Xem console log để biết chi tiết.",
     "The message from the parser is: %(message)s": "Thông báo của trình xử lý là: %(message)s",
@@ -14,7 +14,7 @@
     "Create Account": "Tạo tài khoản",
     "Explore rooms": "Khám phá phòng chat",
     "Download Completed": "Đã hoàn thành tải xuống",
-    "Go to element.io": "Đi đến schildi.chat",
+    "Go to element.io": "Đi đến element.io",
     "I understand the risks and wish to continue": "Tôi hiểu các rủi ro và muốn tiếp tục",
     "You can continue using your current browser, but some or all features may not work and the look and feel of the application may be incorrect.": "Bạn có thể tiếp tục sử dụng trình duyệt hiện tại của bạn, nhưng một số tính năng có thể không hoạt động và trải nghiệm ứng dụng sẽ không được chính xác.",
     "Please install <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, or <safariLink>Safari</safariLink> for the best experience.": "Vui lòng cài đặt <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, hoặc <safariLink>Safari</safariLink> để có trải nghiệm tốt nhất.",
@@ -32,6 +32,6 @@
     "Powered by Matrix": "Được chạy bởi công nghệ Matrix",
     "%(appName)s (%(browserName)s, %(osName)s)": "%(appName)s (%(browserName)s, %(osName)s)",
     "Missing indexeddb worker script!": "Thiếu tệp lệnh làm việc của indexeddb!",
-    "Your Element configuration contains invalid JSON. Please correct the problem and reload the page.": "Thiết lập SchildiChat của bạn chứa JSON không hợp lệ. Vui lòng sửa vấn đề và tải lại trang.",
-    "Your Element is misconfigured": "SchildiChat của bạn bị thiết lập sai"
+    "Your Element configuration contains invalid JSON. Please correct the problem and reload the page.": "Thiết lập Element của bạn chứa JSON không hợp lệ. Vui lòng sửa vấn đề và tải lại trang.",
+    "Your Element is misconfigured": "Element của bạn bị thiết lập sai"
 }
