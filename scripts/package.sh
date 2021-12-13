@@ -23,12 +23,7 @@ cp -r webapp $name-$version
 # Just in case you have a local config, remove it before packaging
 rm $name-$version/config.json || true
 
-# if $version looks like semver with leading v, strip it before writing to file
-if [[ ${version} =~ ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+(-.+)?$ ]]; then
-    echo ${version:1} > $name-$version/version
-else
-    echo ${version} > $name-$version/version
-fi
+$(dirname $0)/normalize-version.sh ${version} > $name-$version/version
 
 tar chvzf dist/$name-$version.tar.gz $name-$version
 rm -r $name-$version
