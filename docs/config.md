@@ -148,12 +148,16 @@ For a good example, see https://develop.element.io/config.json.
    1. `obeyAssertedIdentity`: If set, MSC3086 asserted identity messages sent
       on VoIP calls will cause the call to appear in the room corresponding to the
       asserted identity. This *must* only be set in trusted environments.
-22. `posthog`: [Posthog](https://posthog.com/) integration config. If not set, Posthog analytics are disabled.
-   2. `projectApiKey`: The Posthog project API key
-   3. `apiHost`: The Posthog API host
-23. `sentry`: [Sentry](https://sentry.io/) configuration for rageshake data being sent to sentry.
-   4. `dsn`: the Sentry [DSN](https://docs.sentry.io/product/sentry-basics/dsn-explainer/)
-   5. `environment`: (optional) The [Environment](https://docs.sentry.io/product/sentry-basics/environments/) to pass to sentry
+1. `posthog`: [Posthog](https://posthog.com/) integration config. If not set, Posthog analytics are disabled.
+   1. `projectApiKey`: The Posthog project API key
+   2. `apiHost`: The Posthog API host
+1. `sentry`: [Sentry](https://sentry.io/) configuration for rageshake data being sent to sentry.
+   1. `dsn`: the Sentry [DSN](https://docs.sentry.io/product/sentry-basics/dsn-explainer/)
+   2. `environment`: (optional) The [Environment](https://docs.sentry.io/product/sentry-basics/environments/) to pass to sentry
+1. `map_style_url`: Maptile server URL for location sharing. e.g.
+   'https://api.maptiler.com/maps/basic/style.json?key=YOUR_KEY_GOES_HERE'
+1. `analyticsOwner`: The entity that analytics data is being sent to. Used in copy
+   when explaining to the user where data is being sent. If not set, defaults to `brand`.
 
 Note that `index.html` also has an og:image meta tag that is set to an image
 hosted on riot.im. This is the image used if links to your copy of Element
