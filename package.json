@@ -1,6 +1,6 @@
 {
   "name": "schildichat-web",
-  "version": "1.10.0-sc.0.test.0",
+  "version": "1.10.0-sc.0.test.1",
   "description": "A Matrix client based on Element with a more traditional instant messaging experience",
   "author": "SchildiChat",
   "repository": {
