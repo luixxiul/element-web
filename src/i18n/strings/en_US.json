@@ -3,7 +3,7 @@
     "powered by Matrix": "powered by Matrix",
     "Unknown device": "Unknown device",
     "You need to be using HTTPS to place a screen-sharing call.": "You need to be using HTTPS to place a screen-sharing call.",
-    "Welcome to Element": "Welcome to Element",
+    "Welcome to Element": "Welcome to SchildiChat",
     "Decentralised, encrypted chat &amp; collaboration powered by [matrix]": "Decentralised, encrypted chat &amp; collaboration powered by [matrix]",
     "Sign In": "Sign In",
     "Create Account": "Create Account",
@@ -14,7 +14,7 @@
     "Invalid configuration: can only specify one of default_server_config, default_server_name, or default_hs_url.": "Invalid configuration: can only specify one of default_server_config, default_server_name, or default_hs_url.",
     "Invalid configuration: no default server specified.": "Invalid configuration: no default server specified.",
     "Failed to start": "Failed to start",
-    "Go to element.io": "Go to element.io",
+    "Go to element.io": "Go to schildi.chat",
     "I understand the risks and wish to continue": "I understand the risks and wish to continue",
     "You can continue using your current browser, but some or all features may not work and the look and feel of the application may be incorrect.": "You can continue using your current browser, but some or all features may not work and the look and feel of the application may be incorrect.",
     "Please install <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, or <safariLink>Safari</safariLink> for the best experience.": "Please install <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, or <safariLink>Safari</safariLink> for the best experience.",
@@ -30,8 +30,8 @@
     "Open": "Open",
     "Download Completed": "Download Completed",
     "Unable to load config file: please refresh the page to try again.": "Unable to load config file: please refresh the page to try again.",
-    "Your Element configuration contains invalid JSON. Please correct the problem and reload the page.": "Your Element configuration contains invalid JSON. Please correct the problem and reload the page.",
-    "Your Element is misconfigured": "Your Element is misconfigured",
+    "Your Element configuration contains invalid JSON. Please correct the problem and reload the page.": "Your SchildiChat configuration contains invalid JSON. Please correct the problem and reload the page.",
+    "Your Element is misconfigured": "Your SchildiChat is misconfigured",
     "Missing indexeddb worker script!": "Missing indexeddb worker script!",
     "Switch to space by number": "Switch to space by number"
 }
