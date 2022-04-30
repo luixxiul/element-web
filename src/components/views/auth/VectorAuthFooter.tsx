@@ -45,6 +45,4 @@ const VectorAuthFooter = () => {
     );
 };
 
-VectorAuthFooter.replaces = 'AuthFooter';
-
 export default VectorAuthFooter;
