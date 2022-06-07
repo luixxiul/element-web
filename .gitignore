@@ -24,3 +24,4 @@ electron/pub
 .vscode
 .vscode/
 .env
+/coverage
