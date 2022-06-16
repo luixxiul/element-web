@@ -1,11 +1,11 @@
 {
-  "name": "schildichat-web",
-  "version": "1.10.14-sc.0.test.1",
-  "description": "A Matrix client based on Element with a more traditional instant messaging experience",
-  "author": "SchildiChat",
+  "name": "element-web",
+  "version": "1.10.14",
+  "description": "A feature-rich client for Matrix.org",
+  "author": "New Vector Ltd.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SchildiChat/element-web"
+    "url": "https://github.com/vector-im/element-web"
   },
   "license": "Apache-2.0",
   "files": [
