@@ -1,7 +1,7 @@
 {
     "Unknown device": "अज्ञात यन्त्र",
     "Dismiss": "खारिज",
-    "Welcome to Element": "Element में आपका स्वागत है",
+    "Welcome to Element": "SchildiChat में आपका स्वागत है",
     "Sign In": "साइन करना",
     "Create Account": "खाता बनाएं",
     "Explore rooms": "रूम का अन्वेषण करें",
@@ -9,7 +9,7 @@
     "%(brand)s Desktop (%(platformName)s)": "%(brand)s का डेस्कटॉप (%(platformName)s)",
     "Invalid configuration: can only specify one of default_server_config, default_server_name, or default_hs_url.": "अमान्य कॉन्फ़िगरेशन: केवल default_server_config, default_server_name, या default_hs_url में से कोई एक निर्दिष्ट कर सकता है।",
     "Failed to start": "प्रारंभ करने में विफल",
-    "Go to element.io": "element.io पर जाएं",
+    "Go to element.io": "schildi.chat पर जाएं",
     "I understand the risks and wish to continue": "मैं जोखिमों को समझता हूं और जारी रखना चाहता हूं",
     "You can continue using your current browser, but some or all features may not work and the look and feel of the application may be incorrect.": "आप अपने वर्तमान ब्राउज़र का उपयोग जारी रख सकते हैं, लेकिन हो सकता है कि कुछ या सभी सुविधाएं काम न करें और एप्लिकेशन का रंगरूप गलत हो सकता है।",
     "Please install <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, or <safariLink>Safari</safariLink> for the best experience.": "सर्वोत्तम अनुभव के लिए कृपया <chromeLink>Chrome</chromeLink>, <firefoxLink>Firefox</firefoxLink>, या <safariLink>Safari</safariLink> इंस्टॉल करें।",
