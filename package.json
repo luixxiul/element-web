@@ -1,11 +1,11 @@
 {
-    "name": "element-web",
+    "name": "schildichat-web-alpha",
     "version": "1.11.81",
-    "description": "A feature-rich client for Matrix.org",
-    "author": "New Vector Ltd.",
+    "description": "A Matrix Client based on Element with some changes and tweaks",
+    "author": "SchildiChat",
     "repository": {
         "type": "git",
-        "url": "https://github.com/element-hq/element-web"
+        "url": "https://github.com/SchildiChat/schildichat-desktop"
     },
     "license": "AGPL-3.0-only OR GPL-3.0-only",
     "files": [
@@ -32,7 +32,7 @@
     "scripts": {
         "i18n": "matrix-gen-i18n && yarn i18n:sort && yarn i18n:lint",
         "i18n:sort": "jq --sort-keys '.' src/i18n/strings/en_EN.json > src/i18n/strings/en_EN.json.tmp && mv src/i18n/strings/en_EN.json.tmp src/i18n/strings/en_EN.json",
-        "i18n:lint": "prettier --log-level=silent  --write src/i18n/strings/ --ignore-path /dev/null",
+        "i18n:lint": "prettier --log-level=silent    --write src/i18n/strings/ --ignore-path /dev/null",
         "i18n:diff": "cp src/i18n/strings/en_EN.json src/i18n/strings/en_EN_orig.json && yarn i18n && matrix-compare-i18n-files src/i18n/strings/en_EN_orig.json src/i18n/strings/en_EN.json",
         "clean": "rimraf lib webapp",
         "build": "yarn clean && yarn build:genfiles && yarn build:bundle",
