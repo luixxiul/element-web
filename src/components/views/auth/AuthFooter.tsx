@@ -15,9 +15,13 @@ import { _t } from "../../../languageHandler";
 const AuthFooter = (): ReactElement => {
     const brandingConfig = SdkConfig.getObject("branding");
     const links = brandingConfig?.get("auth_footer_links") ?? [
+        /*
         { text: "Blog", url: "https://element.io/blog" },
         { text: "Twitter", url: "https://twitter.com/element_hq" },
         { text: "GitHub", url: "https://github.com/element-hq/element-web" },
+        */
+        { text: "About", url: "https://schildi.chat" },
+        { text: "GitHub", url: "https://github.com/schildichat/schildichat-desktop" },
     ];
 
     const authFooterLinks: JSX.Element[] = [];
