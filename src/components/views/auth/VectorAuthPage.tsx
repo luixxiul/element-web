@@ -56,7 +56,7 @@ export default class VectorAuthPage extends React.PureComponent<React.PropsWithC
         const modalContentStyle: React.CSSProperties = {
             display: "flex",
             zIndex: 1,
-            background: "rgba(255, 255, 255, 0.59)",
+            background: "linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7))",
             borderRadius: "8px",
         };
 
