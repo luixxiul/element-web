@@ -395,6 +395,7 @@ $left-gutter: 64px;
         .mx_BaseAvatar > * {
             height: $font-14px !important;
             width: $font-14px !important;
+            line-height: $font-14px; /* override wildcard; fix alignment of capital letter inside read receipts */
             flex-shrink: 0; /* Prevents the avatar from shrinking (when mx_DisambiguatedProfile_displayName is long) */
         }
 
@@ -405,6 +406,7 @@ $left-gutter: 64px;
             .mx_BaseAvatar > * {
                 height: $font-16px !important; /* override the value specified above */
                 width: $font-16px !important; /* override the value specified above */
+                line-height: $font-16px; /* override wildcard; fix alignment of capital letter inside read receipts */
             }
         }
 
