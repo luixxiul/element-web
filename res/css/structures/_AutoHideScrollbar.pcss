@@ -10,6 +10,19 @@ Please see LICENSE files in the repository root for full details.
 html {
     scrollbar-color: $scrollbar-thumb-color transparent;
 }
+/* SC: disabled */
+/* scrollbar-width is not inherited (but -color is, why?!), */
+/* so declare it on every element */
+/*
+* {
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+*/
 
 ::-webkit-scrollbar-thumb {
     border-radius: 3px;
