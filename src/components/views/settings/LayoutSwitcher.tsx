@@ -26,6 +26,7 @@ export function LayoutSwitcher(): JSX.Element {
         <SettingsSubsection heading={_t("common|message_layout")} legacy={false} data-testid="layoutPanel">
             <LayoutSelector />
             <ToggleCompactLayout />
+            <HideAvatar />
         </SettingsSubsection>
     );
 }
@@ -156,6 +157,37 @@ function ToggleCompactLayout(): JSX.Element {
             >
                 <Label>{_t("settings|appearance|compact_layout")}</Label>
                 <HelpMessage>{_t("settings|appearance|compact_layout_description")}</HelpMessage>
+            </InlineField>
+        </Root>
+    );
+}
+
+/**
+ * HideAvatar
+ */
+function HideAvatar(): JSX.Element {
+    const hideAvatarEnabled = useSettingValue<boolean>("hideAvatar");
+    const layout = useSettingValue<Layout>("layout");
+
+    return (
+        <Root
+            onChange={async (evt) => {
+                const checked = new FormData(evt.currentTarget).get("hideAvatar") === "on";
+                await SettingsStore.setValue("hideAvatar", null, SettingLevel.DEVICE, checked);
+            }}
+        >
+            <InlineField
+                name="hideAvatar"
+                control={
+                    <ToggleControl
+                        disabled={layout !== Layout.IRC}
+                        name="hideAvatar"
+                        defaultChecked={hideAvatarEnabled}
+                    />
+                }
+            >
+                <Label>{_t("Hide avatars")}</Label>
+                <HelpMessage>{_t("Available on IRC layout only")}</HelpMessage>
             </InlineField>
         </Root>
     );

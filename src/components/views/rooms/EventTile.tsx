@@ -1231,6 +1231,7 @@ export class UnwrappedEventTile extends React.Component<EventTileProps, IState> 
                         "data-event-id": this.props.mxEvent.getId(),
                         "onMouseEnter": () => this.setState({ hover: true }),
                         "onMouseLeave": () => this.setState({ hover: false }),
+                        "data-avatar": "false", // [sc]
                     },
                     [
                         <div className="mx_EventTile_senderDetails" key="mx_EventTile_senderDetails">
@@ -1310,6 +1311,7 @@ export class UnwrappedEventTile extends React.Component<EventTileProps, IState> 
                                     break;
                             }
                         },
+                        "data-avatar": "false", // [sc]
                     },
                     <>
                         <div className="mx_EventTile_details">
@@ -1427,6 +1429,7 @@ export class UnwrappedEventTile extends React.Component<EventTileProps, IState> 
                         "data-has-reply": !!replyChain,
                         "onMouseEnter": () => this.setState({ hover: true }),
                         "onMouseLeave": () => this.setState({ hover: false }),
+                        "data-avatar": "false", // [sc]
                     },
                     <>
                         {ircTimestamp}

@@ -606,6 +606,12 @@ export const SETTINGS: { [setting: string]: ISetting } = {
         default: false,
         controller: new IncompatibleController("layout", false, (v: Layout) => v !== Layout.Group),
     },
+    "hideAvatar": {
+        supportedLevels: LEVELS_DEVICE_ONLY_SETTINGS,
+        displayName: _td("Hide avatars"),
+        default: false,
+        controller: new IncompatibleController("layout", false, (v: Layout) => v !== Layout.IRC),
+    },
     "showRedactions": {
         supportedLevels: LEVELS_ROOM_SETTINGS_WITH_ROOM,
         displayName: _td("settings|show_redaction_placeholder"),
